@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-LET</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='about.css')}}">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="{{url_for('getlocation.html')}}"><img src=".jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{url_for('home')}}">HOME</a></li>
+                    <li><a href="{{url_for('about')}}">ABOUT</a></li>
+                    <li><a href="{{url_for('home')}}">PAYMENT</a></li>
+                    
+                    <li><a href="{{url_for('contact')}}">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT</h1>
+    </section>
+
+    <!-- contact information -->
+    
+    <section class="contact-me">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>MOHAMED MUJAMMIL Y S</h5>
+                        <p>CHENNAI,603110</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 8838126238</h5>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>mohamed2112013@ssn.edu.in</h5>
+                        <p>my email</p>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="contact-col">
+
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="message" required></textarea>
+                        <button type="submit" class="hero-btn">Send message</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        Most hostels offer shared lounge and kitchen facilities, and many hostels also offer private rooms at a<br> budget friendly rate, typically with shared & separate bathroom.
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>         
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by SSN IT</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

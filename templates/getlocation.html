@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get_location</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{url_for('static',filename='geolocation.css')}}"
+    />
+</head>
+
+<body>
+        <div class="headerdiv">
+            <nav>
+                
+
+                <div class="nav-links">
+                    <ul>
+                        
+                        <li><a href="{{url_for('login')}}">Login</a></li>
+                        <li><a href="{{url_for('about')}}">About Us</a></li>
+                    </ul>
+                
+            </nav>
+
+        <div class="leftbar"></div>
+           
+            <div class="row">
+                
+                <div class="leftcol">
+                    <!--<form action="display.html" method="post" class="requirement">
+                        <h3>WELCOME TO EDIFICE LIVING !</h3>   
+                        <input type="text" name="Location" class="form" placeholder="Location" required>
+                        <input type="text" name="Budget" class="form" placeholder="Budget" required>
+                        
+                        <br>
+                        <input type="submit" name="Location" value="Search" id="submit">
+                    </form>-->
+                </div>
+
+
+                    <div class="rightcol">
+                        <!--<img src="homepage_mine.png">-->
+                        <form action="{{url_for('get_input')}}" method="post" class="requirement"><!--display.html-->
+                            <h1>WELCOME TO EDIFICE LIVING !</h1>   
+                            <br>
+                            <br>
+                            <br>
+                            <input type="text" name="Location" class="form" placeholder="Location" required>
+                            <br>
+                            <br>
+                            <input type="text" name="Budget" class="form" placeholder="Budget" required>
+                            
+                            <br>
+                            <br>
+                            <br>
+                            <input type="submit" name="Location" value="Search" id="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+                
+               
+             
+         
+</body>
+
+</html>

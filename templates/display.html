@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DISPLAY</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{url_for('static',filename='display.css')}}"
+    >
+</head>
+
+<body>
+    <div class="headerdiv">
+        <nav>
+            <div class="logo">EDIFICE LIVING</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="{{url_for('home')}}">Home</a></li>
+                    <li><a href="{{url_for('about')}}">About Us</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="leftbar"></div>
+            <div class="row">
+                <div class="leftcol">
+                    
+                </div>
+                
+                <div class="rightcol">
+                    <div class="whitespace">
+                    <div class="right-head">BASED ON DISTANCE</div>
+                    <br>
+                    <table id="location-table">
+                        <thead>
+                            <tr>
+                                <th>PG TITLE</th>
+                                <th>BOOKING</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>{{distance_accomodation}}</td>
+                                <td><a href="{{url_for('booking')}}">BOOKNOW</a></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <div class="left-head">BASED ON BUDGET</div>
+                    <br>
+                    <table id="user-table">
+                        <thead>
+                            <tr>
+                                <th>PGTITLE</th>
+                                <th>BOOKING</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <tr>
+                                    <td>{{budget_accomodation}}</td>
+                                    <td><a href="{{url_for('booking')}}">BOOKNOW</a></td>
+                                </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

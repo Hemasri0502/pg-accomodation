@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Accommodation Booking Confirmation</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='afterbook.css')}}">
+</head>
+
+<body>
+    <div class ='whitespace'>
+        <div class="container">
+            <h1>PG Accommodation Booked Successfully!</h1>
+            <h4>Thank you for booking a PG accommodation. Your booking has been confirmed.</h4>
+            <h4>What would you like to do next?</h4>
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                
+                
+                <li><a href="{{url_for('about')}}">About</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
